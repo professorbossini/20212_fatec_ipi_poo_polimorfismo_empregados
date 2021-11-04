@@ -5,9 +5,27 @@ public class Empregado{
     private double bonus;
     private double horasTrabalhadas;
     private double valorHora;
+    private int numeroDeTarefas;
+    private double valorTarefa;
 
     public Empregado (int tipo){
         this.tipo = tipo;
+    }
+
+    public int getNumeroDeTarefas() {
+        return numeroDeTarefas;
+    }
+
+    public double getValorTarefa() {
+        return valorTarefa;
+    }
+
+    public void setNumeroDeTarefas(int numeroDeTarefas) {
+        this.numeroDeTarefas = numeroDeTarefas;
+    }
+
+    public void setValorTarefa(double valorTarefa) {
+        this.valorTarefa = valorTarefa;
     }
 
     public int getTipo() {
@@ -29,7 +47,7 @@ public class Empregado{
     public double getSalario() {
         return salario;
     }
-    
+
     public double getValorHora() {
         return valorHora;
     }
